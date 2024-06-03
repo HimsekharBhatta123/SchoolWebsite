@@ -1,0 +1,169 @@
+/* Navbar Container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #206710;
+  padding: 1rem 2rem; /* Adjusted padding for responsiveness */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Added z-index for stacking order */
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  height: 5rem;
+}
+
+.logo img {
+  height: inherit;
+  width: auto; /* Changed to auto for better scaling */
+  border-radius: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  border: 2px solid rgb(30, 241, 11);
+}
+
+.logo h2 {
+  margin-left: 1rem; /* Adjusted spacing */
+  font-size: 1.5rem; /* Increased font size for better visibility */
+}
+
+/* Navbar Menu */
+#navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar li {
+  padding: 0 1rem; /* Adjusted padding for better spacing */
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+  color: chartreuse;
+}
+
+
+
+#navbar li a::after {
+  content: "";
+  width: 0; /* Initially no underline */
+  height: 2px;
+  background-color: chartreuse;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the underline */
+  transition: width 0.3s ease-in-out; /* Smooth transition for underline */
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  width: 30%; /* Show underline on hover and for active item */
+}
+
+/* Mobile Menu Icon */
+#mobile {
+  display: none; /* Hide by default */
+}
+
+#mobile i {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  #navbar {
+    display: none; /* Hide navbar menu by default on smaller screens */
+    flex-direction: column;
+    position: fixed;
+    top: 7rem; /* Adjusted top spacing */
+    right: -100%; /* Off-screen initially */
+    width: 100%;
+    height: calc(100vh - 7rem); /* Adjusted height accounting for top spacing */
+    background-color: #2a3239;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    transition: right 0.3s ease-in-out; /* Smooth slide-in transition */
+  }
+
+  #navbar.active {
+    right: 0; /* Slide navbar menu in when active */
+  }
+
+  #navbar li {
+    margin-bottom: 1rem; /* Adjusted spacing */
+  }
+
+  #mobile {
+    display: block; /* Show mobile menu icon */
+  }
+}
+
+@media screen and (max-width:1200px){
+  nav{
+  display: flex;
+  font-size: medium;
+  justify-content: space-around;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 9rem;
+    right: -30rem;
+    width: 30rem;
+    height: 100vh;
+    background-color: #2a3239;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 4rem 0 0 1rem;
+    transition: 0.3s ease-in-out;
+  }
+  .logo{
+    margin: 0;
+  }
+  #navbar.active{
+    right: -270px;
+   }
+   #navbar li{
+      margin-bottom: 2.5rem;
+   }
+  #mobile{
+    display: block;
+ }
+  #mobile i {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+nav{
+  padding: 1rem;
+ }
+}

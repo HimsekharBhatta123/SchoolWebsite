@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.about-us{
+        background-color: #f2f8f2; 
+        padding: 20px;
+        border-radius: 10px;  
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.about-us-title{
+    color: #006400; 
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.about-content{
+    color: #333; 
+    line-height: 1.6;
+}
+.about-header{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.about-header img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.about-header-content{
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-21%, -55%);
+    font-size: 24px;
+    color: #132b1c;
+    letter-spacing: 0.2cm;
+}
+.about-text{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.school-instructions{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.examination-instructions{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.fees-instructions{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.notice-instructions{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.fees-structure{
+    margin: 2rem 3rem 2rem 9rem;
+    border-radius: 10px;
+    width: 80%;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0.5, 0.2, 0.2);
+}
+.fees-structure-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 20px 0;
+}
+.fees-structure-table th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.fees-structure-table th{
+    background-color: #8df3d1;
+}
+.fees-structure-table td{
+    background-color: #cdd2d7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-header img {
+        height: auto;
+    }
+
+    .about-header-content {
+        font-size: 18px;
+        left: 10%;
+        transform: translate(-8%, -55%);
+    }
+
+    .about-text,
+    .school-instructions,
+    .examination-instructions,
+    .fees-instructions,
+    .notice-instructions,
+    .fees-structure,
+    .fees-structure-table th,
+    .fees-structure-table td {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-header img {
+        height: auto;
+    }
+
+    .about-header-content {
+        font-size: 18px;
+        left: 10%;
+        transform: translate(-8%, -55%);
+    }
+
+    .about-text,
+    .school-instructions,
+    .examination-instructions,
+    .fees-instructions,
+    .notice-instructions,
+    .fees-structure,
+    .fees-structure-table th,
+    .fees-structure-table td {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .about-header-content {
+        font-size: 12px;
+        left: 8%;
+        transform: translate(-6%, -55%);
+    }
+
+    .about-text,
+    .school-instructions,
+    .examination-instructions,
+    .fees-instructions,
+    .notice-instructions,
+    .fees-structure,
+    .fees-structure-table th,
+    .fees-structure-table td {
+        margin: 0.5rem;
+        width: calc(100% - 1rem);
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .about-header img {
+        display: none;
+    }
+
+    .about-header-content {
+        font-size: 14px;
+        left: 2%;
+        transform: translate(-2%, -55%);
+    }
+
+    .about-text,
+    .school-instructions,
+    .examination-instructions,
+    .fees-instructions,
+    .notice-instructions,
+    .fees-structure,
+    .fees-structure-table th,
+    .fees-structure-table td {
+        margin: 0.25rem;
+        width: calc(100% - 0.5rem);
+        padding: 0.25rem;
+        font-size: 12px;
+    }
+
+    .about-us-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .about-content {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
