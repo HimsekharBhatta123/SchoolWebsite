@@ -9,6 +9,8 @@
 }
 body{
   font-size: 20px;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
